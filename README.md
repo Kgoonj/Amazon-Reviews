@@ -23,3 +23,50 @@ To run the notebook locally:
 ```bash
 git clone https://github.com/yourusername/AmazonReviews.git
 cd AmazonReviews
+2. Install dependencies
+Make sure you have Python 3.7+ and install the required libraries:
+
+bash
+Copy
+Edit
+pip install -r requirements.txt
+Alternatively, you can install manually:
+
+bash
+Copy
+Edit
+pip install pandas numpy matplotlib seaborn scikit-learn nltk
+Note: Run nltk.download('stopwords') and other required datasets inside the notebook.
+
+3. Launch Jupyter Notebook
+bash
+Copy
+Edit
+jupyter notebook AmazonReviews.ipynb
+🧠 Models Used
+Logistic Regression
+
+Naive Bayes
+
+(Optional: Support Vector Machines, Random Forests)
+
+📈 Evaluation
+Models are evaluated using:
+
+Accuracy
+
+Confusion Matrix
+
+Precision, Recall, F1 Score
+
+📁 Data
+The dataset should include Amazon product reviews with at least the following columns:
+
+ReviewText
+
+Sentiment (e.g., 0 = Negative, 1 = Positive)
+
+If the dataset is not included, update the notebook to point to your own data source.
+
+📄 License
+This project is licensed under the MIT License. See the LICENSE file for more info.
